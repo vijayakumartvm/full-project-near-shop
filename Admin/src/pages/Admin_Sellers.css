@@ -1,0 +1,829 @@
+/* ==========================================
+   NEARSHOP SELLERS MANAGEMENT
+   FreshCart-inspired responsive styling
+========================================== */
+
+.nsl-page,
+.nsl-page * {
+    box-sizing: border-box;
+}
+
+.nsl-page {
+    width: 100%;
+    min-width: 0;
+    color: #263b2d;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+}
+
+.nsl-page button,
+.nsl-page input,
+.nsl-page select {
+    font-family: inherit;
+}
+
+
+/* Header */
+
+.nsl-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.nsl-eyebrow {
+    color: #0fa36b;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.nsl-heading h2 {
+    margin: 7px 0;
+    color: #17231b;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.nsl-heading p {
+    margin: 0;
+    color: #78847b;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.nsl-approval-link {
+    min-height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 12px;
+    border: 1px solid #cde8d6;
+    border-radius: 9px;
+    background: #e8f7ee;
+    color: #08764d;
+    font-size: 10px;
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.nsl-approval-link:hover {
+    background: #d8f1e2;
+}
+
+
+/* Notice */
+
+.nsl-notice {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 16px;
+    padding: 12px 14px;
+    border: 1px solid #cbe9d3;
+    border-radius: 9px;
+    background: #eaf7ee;
+    color: #08764d;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.nsl-notice>svg {
+    flex-shrink: 0;
+}
+
+.nsl-notice>span {
+    flex: 1;
+}
+
+.nsl-notice button {
+    display: grid;
+    place-items: center;
+    padding: 3px;
+    border: 0;
+    border-radius: 5px;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+
+/* Statistics */
+
+.nsl-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 13px;
+    margin-bottom: 19px;
+}
+
+.nsl-stat-card {
+    min-width: 0;
+    min-height: 106px;
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    padding: 15px 12px;
+    border: 1px solid #edf0f1;
+    border-radius: 13px;
+    background: #ffffff;
+    box-shadow: 0 3px 12px rgba(25, 77, 40, 0.025);
+}
+
+.nsl-stat-icon {
+    width: 39px;
+    height: 39px;
+    flex: 0 0 39px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.nsl-stat-icon.total {
+    background: #e8f1fd;
+    color: #377ec8;
+}
+
+.nsl-stat-icon.active {
+    background: #e4f6ec;
+    color: #0b9b64;
+}
+
+.nsl-stat-icon.pending {
+    background: #fff1df;
+    color: #cf8a2c;
+}
+
+.nsl-stat-icon.paused {
+    background: #f1ebfc;
+    color: #8962be;
+}
+
+.nsl-stat-card>div:last-child {
+    min-width: 0;
+}
+
+.nsl-stat-card p {
+    margin: 3px 0 6px;
+    color: #7b887d;
+    font-size: 9px;
+    line-height: 1.5;
+}
+
+.nsl-stat-card h3 {
+    margin: 0 0 5px;
+    color: #19271e;
+    font-size: 23px;
+    font-weight: 750;
+}
+
+.nsl-stat-card small {
+    display: block;
+    color: #8d988f;
+    font-size: 8px;
+    line-height: 1.6;
+}
+
+
+/* Directory panel */
+
+.nsl-panel {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid #edf0f1;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 3px 12px rgba(25, 77, 40, 0.025);
+}
+
+.nsl-panel-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 19px 19px 16px;
+}
+
+.nsl-panel-heading h3 {
+    margin: 0 0 5px;
+    color: #1b2920;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nsl-panel-heading p {
+    margin: 0;
+    color: #829087;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.nsl-count {
+    flex-shrink: 0;
+    padding: 6px 10px;
+    border: 1px solid #dcefe2;
+    border-radius: 20px;
+    background: #eaf7ef;
+    color: #08764d;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+
+/* Search and filter */
+
+.nsl-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 14px 19px;
+    border-top: 1px solid #edf1ed;
+    border-bottom: 1px solid #e9eee9;
+    background: #fbfcfb;
+}
+
+.nsl-search {
+    width: min(370px, 100%);
+    min-width: 0;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 0 11px;
+    border: 1px solid #e4eae5;
+    border-radius: 22px;
+    background: #ffffff;
+    color: #7c897f;
+}
+
+.nsl-search:focus-within {
+    border-color: #99d1ae;
+    box-shadow: 0 0 0 3px #0fa36b0c;
+}
+
+.nsl-search svg {
+    flex-shrink: 0;
+}
+
+.nsl-search input {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: #263b2d;
+    font-size: 10px;
+}
+
+.nsl-search input::placeholder {
+    color: #939d95;
+}
+
+.nsl-filter {
+    min-width: 150px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 0 10px;
+    border: 1px solid #e4eae5;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #7c897f;
+}
+
+.nsl-filter select {
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: #4c5d51;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+
+/* Table */
+
+.nsl-table-scroll {
+    width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.nsl-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.nsl-table thead {
+    background: #f7f9f7;
+}
+
+.nsl-table th {
+    padding: 13px 12px;
+    border-bottom: 1px solid #e8eee8;
+    color: #79867c;
+    font-size: 8px;
+    font-weight: 750;
+    letter-spacing: 0.35px;
+}
+
+.nsl-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eff3ef;
+    color: #5e6e62;
+    font-size: 9px;
+}
+
+.nsl-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.nsl-table tbody tr:hover {
+    background: #fbfdfb;
+}
+
+.nsl-store-cell,
+.nsl-owner-cell {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.nsl-store-avatar {
+    width: 35px;
+    height: 35px;
+    flex: 0 0 35px;
+    display: grid;
+    place-items: center;
+    border-radius: 9px;
+    background: #e5f5e9;
+    color: #17834b;
+}
+
+.nsl-store-cell>div,
+.nsl-owner-cell {
+    min-width: 0;
+}
+
+.nsl-store-cell>div,
+.nsl-owner-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nsl-store-cell strong,
+.nsl-owner-cell strong {
+    color: #35473a;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.nsl-store-cell small,
+.nsl-owner-cell small {
+    color: #89958c;
+    font-size: 8px;
+}
+
+
+/* Status badges */
+
+.nsl-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 9px;
+    border-radius: 20px;
+    font-size: 8px;
+    font-weight: 700;
+}
+
+.nsl-status>span {
+    width: 6px;
+    height: 6px;
+    flex: 0 0 6px;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+.nsl-status.active {
+    border: 1px solid #bde5cd;
+    background: #e8f7ef;
+    color: #12865b;
+}
+
+.nsl-status.pending {
+    border: 1px solid #ead9bb;
+    background: #fff5e5;
+    color: #a86d1c;
+}
+
+.nsl-status.paused {
+    border: 1px solid #efcccc;
+    background: #fff0f0;
+    color: #bd4242;
+}
+
+
+/* Row actions */
+
+.nsl-actions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nsl-actions button {
+    width: 28px;
+    height: 28px;
+    flex: 0 0 28px;
+    display: grid;
+    place-items: center;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.nsl-view-button {
+    border: 1px solid #e0e8e1;
+    background: #ffffff;
+    color: #65766a;
+}
+
+.nsl-view-button:hover {
+    background: #edf8ef;
+    color: #08764d;
+}
+
+.nsl-pause-button {
+    border: 1px solid #efcccc;
+    background: #fff0f0;
+    color: #bd4242;
+}
+
+.nsl-pause-button:hover {
+    background: #ffe0e0;
+}
+
+.nsl-activate-button {
+    border: 1px solid #bfe3cb;
+    background: #e8f7ed;
+    color: #12865b;
+}
+
+.nsl-activate-button:hover {
+    background: #d5f0dd;
+}
+
+
+/* Empty results and footer */
+
+.nsl-empty {
+    padding: 44px 18px !important;
+    text-align: center;
+    white-space: normal;
+}
+
+.nsl-empty svg,
+.nsl-empty strong,
+.nsl-empty span {
+    display: block;
+    margin: 0 auto 9px;
+}
+
+.nsl-empty svg {
+    color: #8b9c90;
+}
+
+.nsl-empty strong {
+    color: #35473a;
+    font-size: 12px;
+}
+
+.nsl-empty span {
+    color: #87958a;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.nsl-table-footer {
+    padding: 13px 18px;
+    border-top: 1px solid #edf1ed;
+    color: #869288;
+    font-size: 9px;
+}
+
+.nsl-demo-note {
+    margin: 12px 2px 0;
+    color: #879388;
+    font-size: 9px;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   SELLER DETAIL MODAL
+========================================== */
+
+.nsl-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    overflow-y: auto;
+    background: rgba(20, 43, 27, 0.48);
+}
+
+.nsl-modal {
+    width: 100%;
+    max-width: 530px;
+    max-height: calc(100vh - 36px);
+    max-height: calc(100dvh - 36px);
+    overflow-y: auto;
+    padding: 23px;
+    border: 1px solid #e4ece5;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 22px 65px rgba(20, 51, 29, 0.18);
+}
+
+.nsl-modal-heading {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #edf1ed;
+}
+
+.nsl-modal-store-icon {
+    width: 45px;
+    height: 45px;
+    flex: 0 0 45px;
+    display: grid;
+    place-items: center;
+    border-radius: 11px;
+    background: #e5f5e9;
+    color: #17834b;
+}
+
+.nsl-modal-heading>div {
+    flex: 1;
+    min-width: 0;
+}
+
+.nsl-modal-heading h3 {
+    margin: 0 0 5px;
+    color: #1c3023;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nsl-modal-heading p {
+    margin: 0;
+    color: #869288;
+    font-size: 9px;
+}
+
+.nsl-modal-heading>button {
+    width: 32px;
+    height: 32px;
+    flex: 0 0 32px;
+    display: grid;
+    place-items: center;
+    border: 0;
+    border-radius: 8px;
+    background: #f0f5f1;
+    color: #607265;
+    cursor: pointer;
+}
+
+.nsl-modal-heading>button:hover {
+    background: #e5f4e9;
+}
+
+.nsl-modal-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 15px 0;
+    border-bottom: 1px solid #edf1ed;
+    color: #637367;
+    font-size: 10px;
+    font-weight: 650;
+}
+
+.nsl-detail-list {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding: 20px 0;
+}
+
+.nsl-detail-list>div {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    color: #0fa36b;
+}
+
+.nsl-detail-list>div>svg {
+    flex-shrink: 0;
+}
+
+.nsl-detail-list>div>span {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nsl-detail-list small {
+    color: #8a968c;
+    font-size: 9px;
+}
+
+.nsl-detail-list strong {
+    color: #394c3e;
+    font-size: 10px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.nsl-modal-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 9px;
+    padding: 15px 0;
+    border-top: 1px solid #edf1ed;
+}
+
+.nsl-modal-metrics>div {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    padding: 11px 9px;
+    border-radius: 9px;
+    background: #f4f8f4;
+}
+
+.nsl-modal-metrics svg {
+    color: #0fa36b;
+}
+
+.nsl-modal-metrics small {
+    color: #7b897e;
+    font-size: 8px;
+}
+
+.nsl-modal-metrics strong {
+    color: #243a2b;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+}
+
+.nsl-modal-primary {
+    width: 100%;
+    min-height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 14px;
+    padding: 9px 12px;
+    border: 0;
+    border-radius: 9px;
+    background: #0fa36b;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nsl-modal-primary:hover {
+    background: #08764d;
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVENESS
+========================================== */
+
+@media (max-width: 1100px) {
+    .nsl-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .nsl-toolbar {
+        align-items: stretch;
+        flex-direction: column;
+    }
+    .nsl-search {
+        width: 100%;
+    }
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVENESS
+========================================== */
+
+@media (max-width: 650px) {
+    .nsl-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .nsl-heading h2 {
+        font-size: 22px;
+    }
+    .nsl-heading p {
+        font-size: 10px;
+    }
+    .nsl-stats {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 10px;
+    }
+    .nsl-stat-card {
+        min-height: 86px;
+        padding: 13px;
+    }
+    .nsl-stat-card h3 {
+        font-size: 21px;
+    }
+    .nsl-panel-heading {
+        padding: 15px 14px;
+    }
+    .nsl-toolbar {
+        gap: 11px;
+        padding: 12px 14px;
+    }
+    .nsl-filter {
+        width: 100%;
+    }
+    /* Table remains readable with horizontal scrolling */
+    .nsl-table {
+        min-width: 800px;
+    }
+    .nsl-table th,
+    .nsl-table td {
+        padding: 11px 12px;
+    }
+    .nsl-modal {
+        padding: 17px;
+        border-radius: 13px;
+    }
+    .nsl-modal-metrics {
+        gap: 7px;
+    }
+    .nsl-modal-metrics>div {
+        padding: 9px 7px;
+    }
+}
+
+@media (max-width: 360px) {
+    .nsl-stat-card {
+        gap: 9px;
+        padding: 12px 10px;
+    }
+    .nsl-stat-icon {
+        width: 35px;
+        height: 35px;
+        flex-basis: 35px;
+    }
+    .nsl-panel-heading {
+        padding: 13px 11px;
+    }
+    .nsl-toolbar {
+        padding: 11px;
+    }
+    .nsl-modal-heading h3 {
+        font-size: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .nsl-page *,
+    .nsl-page *::before,
+    .nsl-page *::after {
+        transition: none !important;
+    }
+}

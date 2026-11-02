@@ -1,0 +1,239 @@
+.near-admin-profile {
+    font-family: "Poppins", "Segoe UI", system-ui, sans-serif;
+    color: #12261a;
+}
+
+.near-profile-heading {
+    margin-bottom: 22px;
+}
+
+.near-profile-heading>span {
+    color: #2e7d32;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+}
+
+.near-profile-heading h2 {
+    margin: 7px 0;
+    color: #0b4a2a;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.near-profile-heading p {
+    color: #7a837d;
+    font-size: 12px;
+}
+
+.near-profile-success {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 18px;
+    padding: 13px 15px;
+    border: 1px solid #cfe7d0;
+    border-radius: 9px;
+    background: #f0faea;
+    color: #2e7d32;
+    font-size: 12px;
+}
+
+.near-profile-grid {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.75fr) minmax(0, 1.6fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.near-profile-card {
+    padding: 25px;
+    border: 1px solid #e6e9e4;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 4px 16px rgba(20, 40, 25, 0.05);
+    box-sizing: border-box;
+}
+
+.near-profile-summary {
+    text-align: center;
+}
+
+.near-profile-avatar {
+    width: 92px;
+    height: 92px;
+    display: grid;
+    place-items: center;
+    margin: 4px auto 17px;
+    border: 4px solid #f0faea;
+    border-radius: 50%;
+    background: #2e7d32;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.near-profile-summary h3 {
+    margin: 0 0 7px;
+    color: #12261a;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.near-profile-summary>p {
+    margin: 0;
+    color: #2e7d32;
+    font-size: 12px;
+}
+
+.near-profile-security {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 27px;
+    padding: 13px;
+    border-radius: 10px;
+    background: #f0faea;
+    color: #2e7d32;
+    text-align: left;
+}
+
+.near-profile-security div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.near-profile-security strong {
+    color: #0b4a2a;
+    font-size: 11px;
+}
+
+.near-profile-security span {
+    color: #7a837d;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.near-profile-form-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 24px;
+    color: #2e7d32;
+}
+
+.near-profile-form-heading h3 {
+    margin: 0 0 6px;
+    color: #0b4a2a;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.near-profile-form-heading p {
+    color: #7a837d;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.near-profile-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 16px;
+}
+
+.near-profile-field {
+    min-width: 0;
+}
+
+.near-profile-field label {
+    display: block;
+    margin-bottom: 8px;
+    color: #12261a;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.near-profile-input {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 12px;
+    border: 1px solid #e6e9e4;
+    border-radius: 9px;
+    color: #7a837d;
+    box-sizing: border-box;
+}
+
+.near-profile-input:focus-within {
+    border-color: #7cb518;
+    box-shadow: 0 0 0 3px rgba(124, 181, 24, 0.12);
+}
+
+.near-profile-input input {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #12261a;
+    font: inherit;
+    font-size: 12px;
+}
+
+.near-profile-field small {
+    display: block;
+    margin-top: 6px;
+    color: #89948a;
+    font-size: 9px;
+    line-height: 1.5;
+}
+
+.near-profile-role {
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    border: 1px solid #e6e9e4;
+    border-radius: 9px;
+    background: #f6f7f1;
+    color: #2e7d32;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.near-profile-save {
+    grid-column: 1 / -1;
+    justify-self: start;
+    min-height: 43px;
+    padding: 0 20px;
+    border: 0;
+    border-radius: 9px;
+    background: #2e7d32;
+    color: #fff;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.near-profile-save:hover {
+    background: #0b4a2a;
+}
+
+@media (max-width: 760px) {
+    .near-profile-grid {
+        grid-template-columns: 1fr;
+    }
+    .near-profile-form {
+        grid-template-columns: 1fr;
+    }
+    .near-profile-save {
+        grid-column: auto;
+        width: 100%;
+    }
+}

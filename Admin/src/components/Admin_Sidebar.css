@@ -1,0 +1,385 @@
+.ns-admin-sidebar,
+.ns-admin-sidebar * {
+    box-sizing: border-box;
+}
+
+.ns-admin-sidebar {
+    position: sticky;
+    top: 24px;
+    align-self: start;
+    width: 220px;
+    height: calc(100vh - 48px);
+    height: calc(100dvh - 48px);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 12px 13px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 1px solid #edf0f3;
+    border-radius: 24px 0 0 24px;
+    background: #ffffff;
+    color: #344639;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: #d8e6db transparent;
+}
+
+
+/* Logo and brand */
+
+.ns-admin-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    min-height: 88px;
+    padding: 0 9px 17px;
+    margin-bottom: 17px;
+    border-bottom: 1px solid #edf1ed;
+    text-decoration: none;
+}
+
+.ns-admin-brand-image {
+    display: block;
+    width: 145px;
+    max-width: 100%;
+    height: 45px;
+    object-fit: contain;
+    object-position: left center;
+}
+
+.ns-admin-brand-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.ns-admin-brand-copy small {
+    color: #89958c;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.ns-admin-brand-copy strong {
+    color: #176b3a;
+    font-size: 13px;
+    font-weight: 750;
+}
+
+
+/* Section heading */
+
+.ns-admin-menu-label {
+    margin: 4px 0 10px;
+    padding: 0 10px;
+    color: #89958c;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+
+/* Navigation */
+
+.ns-admin-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.ns-admin-navigation-link {
+    width: 100%;
+    min-height: 41px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: transparent;
+    color: #48584d;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.4;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.ns-admin-navigation-icon {
+    flex: 0 0 19px;
+    color: #4b5a50;
+}
+
+.ns-admin-link-label {
+    min-width: 0;
+    flex: 1;
+}
+
+.ns-admin-link-chevron {
+    flex-shrink: 0;
+    color: #8c998f;
+    opacity: 0;
+}
+
+.ns-admin-navigation-link:hover {
+    background: #f4faf6;
+    color: #08764d;
+}
+
+.ns-admin-navigation-link:hover .ns-admin-navigation-icon {
+    color: #08764d;
+}
+
+.ns-admin-navigation-link:hover .ns-admin-link-chevron,
+.ns-admin-navigation-link.active .ns-admin-link-chevron {
+    opacity: 1;
+}
+
+.ns-admin-navigation-link.active {
+    background: #e4f7ef;
+    color: #08764d;
+    font-weight: 700;
+}
+
+.ns-admin-navigation-link.active .ns-admin-navigation-icon {
+    color: #08764d;
+}
+
+
+/* Sidebar bottom */
+
+.ns-admin-sidebar-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+.ns-admin-sidebar-promo {
+    padding: 13px 11px;
+    border: 1px solid #c8f2e2;
+    border-radius: 12px;
+    background: #d9faee;
+}
+
+.ns-admin-promo-icon {
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 9px;
+    border-radius: 9px;
+    background: #bdf1df;
+    color: #08764d;
+}
+
+.ns-admin-sidebar-promo h3 {
+    margin: 0 0 6px;
+    color: #164b32;
+    font-size: 11px;
+    font-weight: 750;
+}
+
+.ns-admin-sidebar-promo p {
+    margin: 0;
+    color: #547064;
+    font-size: 9px;
+    line-height: 1.6;
+}
+
+.ns-admin-sidebar-promo button {
+    width: 100%;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 11px;
+    padding: 0 9px;
+    border: 0;
+    border-radius: 7px;
+    background: #0fa36b;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 9px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.ns-admin-sidebar-promo button:hover {
+    background: #08764d;
+}
+
+
+/* Logout */
+
+.ns-admin-logout {
+    width: 100%;
+    min-height: 39px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: transparent;
+    color: #a63f3f;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+}
+
+.ns-admin-logout:hover {
+    border-color: #f2dddd;
+    background: #fff1f1;
+}
+
+.ns-admin-sidebar-footer {
+    padding: 11px 0 2px;
+    border-top: 1px solid #edf1ed;
+    color: #919d93;
+    font-size: 9px;
+    text-align: center;
+}
+
+
+/* Tablet */
+
+@media (min-width: 701px) and (max-width: 1024px) {
+    .ns-admin-sidebar {
+        width: 195px;
+        padding: 18px 9px 11px;
+        border-radius: 20px 0 0 20px;
+    }
+    .ns-admin-brand {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .ns-admin-brand-image {
+        width: 130px;
+    }
+    .ns-admin-navigation-link {
+        gap: 8px;
+        padding: 0 8px;
+        font-size: 9px;
+    }
+    .ns-admin-sidebar-promo {
+        padding: 11px 9px;
+    }
+}
+
+
+/* Mobile slide-out drawer */
+
+@media (max-width: 700px) {
+    .ns-admin-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 120;
+        width: min(285px, 84vw);
+        max-width: 285px;
+        height: 100vh;
+        height: 100dvh;
+        padding: max(18px, env(safe-area-inset-top)) 13px max(14px, env(safe-area-inset-bottom));
+        border: 1px solid #edf0f3;
+        border-radius: 0 18px 18px 0;
+        transform: translateX(-105%);
+        transition: transform 0.25s ease;
+        box-shadow: none;
+    }
+    .admin-sidebar-open .ns-admin-sidebar {
+        transform: translateX(0);
+        box-shadow: 12px 0 35px rgba(15, 48, 25, 0.16);
+    }
+    .ns-admin-brand {
+        min-height: 85px;
+    }
+    .ns-admin-navigation-link {
+        min-height: 44px;
+        gap: 11px;
+        font-size: 11px;
+    }
+    .ns-admin-link-chevron {
+        opacity: 1;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ns-admin-sidebar,
+    .ns-admin-navigation-link {
+        transition: none;
+    }
+}
+
+
+/* ==========================================
+   SIDEBAR COVERS THE FULL LEFT EDGE
+========================================== */
+
+.ns-admin-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 220px;
+    height: 100vh;
+    height: 100dvh;
+    padding: 22px 13px 14px;
+    border: none;
+    border-right: 1px solid #e6eee7;
+    border-radius: 0;
+    background: #ffffff;
+    z-index: 120;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+/* Keep the NearShop logo aligned */
+
+.ns-admin-brand {
+    margin-top: 0;
+    padding-top: 5px;
+}
+
+
+/* Tablet */
+
+@media (min-width: 701px) and (max-width: 1024px) {
+    .ns-admin-sidebar {
+        width: 195px;
+        height: 100vh;
+        height: 100dvh;
+        padding: 18px 10px 12px;
+    }
+}
+
+
+/* Mobile: sidebar becomes a slide-out drawer */
+
+@media (max-width: 700px) {
+    .ns-admin-sidebar {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: min(285px, 84vw);
+        max-width: 285px;
+        height: 100vh;
+        height: 100dvh;
+        padding: max(18px, env(safe-area-inset-top)) 13px max(14px, env(safe-area-inset-bottom));
+        border-right: 1px solid #e6eee7;
+        border-radius: 0 18px 18px 0;
+        transform: translateX(-105%);
+    }
+    .admin-sidebar-open .ns-admin-sidebar {
+        transform: translateX(0);
+    }
+}

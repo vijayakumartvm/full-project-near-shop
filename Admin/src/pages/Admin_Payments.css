@@ -1,0 +1,819 @@
+.apm-page {
+    min-height: 100%;
+    padding: 28px;
+    background: #f4f7fb;
+    color: #263b31;
+    font-family: "Poppins", sans-serif;
+}
+
+.apm-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.apm-eyebrow {
+    margin: 0 0 7px;
+    color: #239653;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.apm-heading h1 {
+    margin: 0;
+    color: #183d2a;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.7px;
+}
+
+.apm-subtitle {
+    margin: 8px 0 0;
+    color: #829087;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.apm-heading-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.apm-primary-btn,
+.apm-secondary-btn {
+    min-height: 41px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 15px;
+    border-radius: 9px;
+    font: inherit;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.apm-primary-btn {
+    border: 1px solid #218d4d;
+    background: #218d4d;
+    color: #fff;
+}
+
+.apm-primary-btn:hover {
+    background: #176f3b;
+    transform: translateY(-1px);
+}
+
+.apm-secondary-btn {
+    border: 1px solid #e0e8e2;
+    background: #fff;
+    color: #5b6c61;
+}
+
+.apm-secondary-btn:hover {
+    background: #f0f8f2;
+}
+
+.apm-notice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    padding: 12px 15px;
+    border: 1px solid #cdebd5;
+    border-radius: 10px;
+    background: #edf9f0;
+    color: #237d42;
+    font-size: 11px;
+}
+
+.apm-notice span {
+    flex: 1;
+}
+
+.apm-notice button {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 6px;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+
+/* Payment summary cards */
+
+.apm-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 17px;
+    margin-bottom: 25px;
+}
+
+.apm-stat-card {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 20px 16px;
+    border: 1px solid #e9eee9;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 3px 15px rgb(35 69 48 / 3%);
+}
+
+.apm-stat-icon {
+    width: 43px;
+    height: 43px;
+    flex: 0 0 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.apm-green {
+    background: #e7f8ec;
+    color: #239653;
+}
+
+.apm-orange {
+    background: #fff1e4;
+    color: #e58b37;
+}
+
+.apm-blue {
+    background: #e9f3ff;
+    color: #3b82d3;
+}
+
+.apm-red {
+    background: #ffebeb;
+    color: #cf6262;
+}
+
+.apm-stat-card p {
+    margin: 0 0 6px;
+    color: #829087;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.apm-stat-card h2 {
+    margin: 0 0 5px;
+    color: #203c2d;
+    font-size: 20px;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+
+.apm-stat-card span {
+    color: #9ba79f;
+    font-size: 9px;
+    line-height: 1.5;
+}
+
+
+/* Transaction panel */
+
+.apm-panel {
+    min-width: 0;
+    padding: 23px;
+    border: 1px solid #e8eee9;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 3px 15px rgb(35 69 48 / 3%);
+}
+
+.apm-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.apm-panel-header h2 {
+    margin: 0;
+    color: #254232;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.apm-panel-header p {
+    margin: 6px 0 0;
+    color: #8b9890;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.apm-count-pill {
+    flex-shrink: 0;
+    padding: 7px 11px;
+    border-radius: 20px;
+    background: #e9f8ed;
+    color: #238b4c;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* Search and filters */
+
+.apm-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.apm-search {
+    min-width: 0;
+    flex: 1;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 0 13px;
+    border: 1px solid #e5eae6;
+    border-radius: 9px;
+    background: #fbfcfb;
+    color: #839188;
+}
+
+.apm-search:focus-within {
+    border-color: #61b77d;
+    box-shadow: 0 0 0 3px rgb(48 157 83 / 8%);
+}
+
+.apm-search input {
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: #284333;
+    font: inherit;
+    font-size: 11px;
+}
+
+.apm-search input::placeholder {
+    color: #a5afa8;
+}
+
+.apm-filter {
+    width: 150px;
+    height: 43px;
+    padding: 0 11px;
+    border: 1px solid #e5eae6;
+    border-radius: 9px;
+    outline: none;
+    background: #fff;
+    color: #516257;
+    font: inherit;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.apm-filter:focus {
+    border-color: #61b77d;
+    box-shadow: 0 0 0 3px rgb(48 157 83 / 8%);
+}
+
+
+/* Transaction table */
+
+.apm-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #edf1ee;
+    border-radius: 10px;
+}
+
+.apm-table {
+    width: 100%;
+    min-width: 1030px;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-align: left;
+}
+
+.apm-table thead th {
+    padding: 14px 12px;
+    border-bottom: 1px solid #e9eee9;
+    background: #f8faf8;
+    color: #839187;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.45px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.apm-table tbody td {
+    padding: 15px 12px;
+    border-bottom: 1px solid #edf1ee;
+    color: #536458;
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+.apm-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.apm-table tbody tr:hover {
+    background: #fbfdfb;
+}
+
+.apm-transaction {
+    min-width: 175px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.apm-transaction-icon {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #e9f8ed;
+    color: #258b4b;
+}
+
+.apm-transaction>div:last-child {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.apm-transaction strong {
+    color: #2b4433;
+    font-size: 10px;
+}
+
+.apm-transaction span {
+    color: #8b9890;
+    font-size: 9px;
+}
+
+.apm-customer {
+    min-width: 145px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.apm-customer strong {
+    color: #2b4433;
+    font-size: 10px;
+}
+
+.apm-customer span {
+    color: #8b9890;
+    font-size: 9px;
+    overflow-wrap: anywhere;
+}
+
+.apm-method {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #5d7062;
+    white-space: nowrap;
+}
+
+.apm-method svg {
+    color: #369357;
+}
+
+.apm-amount {
+    color: #2d4936;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.apm-refund-hint {
+    display: block;
+    margin-top: 5px;
+    color: #bd7136;
+    font-size: 9px;
+    white-space: nowrap;
+}
+
+.apm-date {
+    color: #647468;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+
+/* Status labels */
+
+.apm-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 9px;
+    border-radius: 20px;
+    font-size: 9px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.apm-status>span {
+    width: 6px;
+    height: 6px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+.apm-status-completed {
+    background: #e8f8ec;
+    color: #24854a;
+}
+
+.apm-status-pending {
+    background: #fff3df;
+    color: #bd8130;
+}
+
+.apm-status-failed {
+    background: #ffebeb;
+    color: #c65252;
+}
+
+.apm-status-refunded {
+    background: #e9f3ff;
+    color: #3b82d3;
+}
+
+
+/* Row buttons */
+
+.apm-row-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.apm-icon-btn {
+    width: 31px;
+    height: 31px;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5eae6;
+    border-radius: 7px;
+    background: #fff;
+    color: #6c7d70;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.apm-icon-btn:hover {
+    border-color: #bee0c7;
+    background: #f0faf2;
+    color: #24894b;
+}
+
+.apm-icon-btn.apm-refund-btn {
+    border-color: #dce8f6;
+    color: #3b82d3;
+}
+
+.apm-icon-btn.apm-refund-btn:hover {
+    background: #eff6ff;
+}
+
+.apm-action-text {
+    min-height: 31px;
+    padding: 0 8px;
+    border: 1px solid #bfe1c8;
+    border-radius: 7px;
+    background: #eff9f1;
+    color: #238648;
+    font: inherit;
+    font-size: 9px;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.apm-action-text:hover {
+    background: #dff2e4;
+}
+
+
+/* Empty results */
+
+.apm-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 15px;
+    text-align: center;
+    color: #299450;
+}
+
+.apm-empty h3 {
+    margin: 14px 0 6px;
+    color: #2c4635;
+    font-size: 15px;
+}
+
+.apm-empty p {
+    margin: 0 0 16px;
+    color: #8b9890;
+    font-size: 11px;
+}
+
+.apm-demo-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 16px 0 0;
+    color: #8b9890;
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+.apm-demo-note svg {
+    flex-shrink: 0;
+    margin-top: 1px;
+    color: #5b9b6e;
+}
+
+
+/* Payment detail modal */
+
+.apm-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow-y: auto;
+    background: rgb(18 36 25 / 48%);
+    backdrop-filter: blur(3px);
+}
+
+.apm-modal {
+    width: 100%;
+    max-width: 540px;
+    max-height: calc(100vh - 40px);
+    max-height: calc(100dvh - 40px);
+    overflow-y: auto;
+    padding: 25px;
+    border-radius: 17px;
+    background: #fff;
+    box-shadow: 0 20px 70px rgb(0 0 0 / 16%);
+}
+
+.apm-modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #edf1ee;
+}
+
+.apm-modal-header h2 {
+    margin: 0;
+    color: #23432e;
+    font-size: 20px;
+}
+
+.apm-modal-close {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e8eee9;
+    border-radius: 9px;
+    background: #fff;
+    color: #647368;
+    cursor: pointer;
+}
+
+.apm-modal-close:hover {
+    background: #f0f8f2;
+    color: #228b4a;
+}
+
+.apm-modal-amount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid #edf1ee;
+}
+
+.apm-modal-payment-icon {
+    width: 51px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background: #e7f8ec;
+    color: #248f4d;
+}
+
+.apm-modal-amount p {
+    margin: 0 0 5px;
+    color: #839087;
+    font-size: 11px;
+}
+
+.apm-modal-amount h3 {
+    margin: 0 0 12px;
+    color: #203c2d;
+    font-size: 28px;
+}
+
+.apm-detail-list {
+    display: flex;
+    flex-direction: column;
+    padding: 9px 0;
+}
+
+.apm-detail-list>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 11px 0;
+    border-bottom: 1px solid #f0f3f0;
+}
+
+.apm-detail-list>div:last-child {
+    border-bottom: 0;
+}
+
+.apm-detail-list span {
+    flex-shrink: 0;
+    color: #829087;
+    font-size: 10px;
+}
+
+.apm-detail-list strong {
+    max-width: 65%;
+    color: #314938;
+    font-size: 10px;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.apm-modal-warning {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    margin: 12px 0 18px;
+    padding: 12px;
+    border: 1px solid #f0e3c6;
+    border-radius: 9px;
+    background: #fff9ea;
+    color: #8b7339;
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+.apm-modal-warning svg {
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.apm-modal-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 9px;
+}
+
+.apm-modal-refund {
+    color: #3b82d3;
+}
+
+
+/* Tablet */
+
+@media (max-width: 1100px) {
+    .apm-page {
+        padding: 22px;
+    }
+    .apm-stat-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+    .apm-page {
+        padding: 16px 12px;
+    }
+    .apm-heading {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .apm-heading h1 {
+        font-size: 24px;
+    }
+    .apm-heading-actions {
+        width: 100%;
+    }
+    .apm-heading-actions button {
+        flex: 1;
+        padding: 0 10px;
+    }
+    .apm-stat-grid {
+        gap: 10px;
+    }
+    .apm-stat-card {
+        align-items: flex-start;
+        gap: 9px;
+        padding: 13px 9px;
+    }
+    .apm-stat-icon {
+        width: 34px;
+        height: 34px;
+        flex-basis: 34px;
+    }
+    .apm-stat-icon svg {
+        width: 17px;
+        height: 17px;
+    }
+    .apm-stat-card h2 {
+        font-size: 17px;
+    }
+    .apm-stat-card p {
+        font-size: 9px;
+    }
+    .apm-stat-card span {
+        font-size: 8px;
+    }
+    .apm-panel {
+        padding: 15px 12px;
+    }
+    .apm-panel-header {
+        align-items: flex-start;
+    }
+    .apm-panel-header h2 {
+        font-size: 14px;
+    }
+    .apm-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .apm-search,
+    .apm-filter {
+        width: 100%;
+        flex: auto;
+    }
+    .apm-modal {
+        padding: 19px 15px;
+    }
+    .apm-modal-actions {
+        flex-direction: column;
+    }
+    .apm-modal-actions button {
+        width: 100%;
+    }
+    .apm-detail-list>div {
+        gap: 10px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .apm-primary-btn,
+    .apm-secondary-btn,
+    .apm-icon-btn {
+        transition: none;
+    }
+}

@@ -1,0 +1,1102 @@
+/* ==========================================
+   NEARSHOP ADMIN DASHBOARD
+   FreshCart-inspired responsive dashboard
+========================================== */
+
+.near-dashboard,
+.near-dashboard * {
+    box-sizing: border-box;
+}
+
+.near-dashboard {
+    width: 100%;
+    min-width: 0;
+    color: #263b2d;
+    font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+}
+
+.near-dashboard button {
+    font-family: inherit;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* Welcome heading */
+
+.nd-welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.nd-eyebrow {
+    color: #0fa36b;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.nd-welcome h2 {
+    margin: 7px 0;
+    color: #17231b;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.nd-welcome p {
+    margin: 0;
+    color: #768279;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.nd-date-button,
+.nd-period-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    min-height: 39px;
+    padding: 0 12px;
+    border: 1px solid #dfe8e1;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #405448;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nd-date-button:hover,
+.nd-period-button:hover {
+    border-color: #a7d8b7;
+    background: #f5faf5;
+}
+
+
+/* Statistics cards */
+
+.nd-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    margin-bottom: 19px;
+}
+
+.nd-stat-card {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    min-width: 0;
+    min-height: 126px;
+    padding: 17px 12px;
+    overflow: hidden;
+    border: 1px solid #edf0f1;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 3px 12px rgba(25, 77, 40, 0.025);
+}
+
+.nd-stat-icon {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    border-radius: 50%;
+}
+
+.nd-stat-icon.green {
+    background: #e4f6ec;
+    color: #0b9b64;
+}
+
+.nd-stat-icon.orange {
+    background: #fff0e3;
+    color: #d88037;
+}
+
+.nd-stat-icon.blue {
+    background: #e8f1fd;
+    color: #377ec8;
+}
+
+.nd-stat-icon.purple {
+    background: #f1ebfc;
+    color: #8962be;
+}
+
+.nd-stat-body {
+    position: relative;
+    z-index: 1;
+    min-width: 0;
+}
+
+.nd-stat-body p {
+    margin: 3px 0 7px;
+    color: #718076;
+    font-size: 9px;
+    line-height: 1.5;
+}
+
+.nd-stat-body h3 {
+    margin: 0 0 9px;
+    color: #17231b;
+    font-size: clamp(16px, 1.5vw, 22px);
+    font-weight: 700;
+    letter-spacing: -0.55px;
+    overflow-wrap: anywhere;
+}
+
+.nd-stat-growth {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    color: #0d9a62;
+    font-size: 9px;
+}
+
+.nd-stat-growth strong {
+    font-size: 9px;
+}
+
+.nd-stat-growth span {
+    color: #8b968e;
+    font-size: 8px;
+}
+
+.nd-mini-chart {
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    width: 35px;
+    height: 24px;
+    opacity: 0.7;
+}
+
+.nd-mini-chart span {
+    flex: 1;
+    min-width: 2px;
+    border-radius: 2px 2px 0 0;
+    background: #4abd85;
+}
+
+.nd-mini-chart.orange span {
+    background: #e9a16e;
+}
+
+.nd-mini-chart.blue span {
+    background: #78aee5;
+}
+
+.nd-mini-chart.purple span {
+    background: #ad9be6;
+}
+
+
+/* Main analytics columns */
+
+.nd-analytics-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(275px, 1fr);
+    align-items: stretch;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.nd-panel {
+    min-width: 0;
+    padding: 19px;
+    border: 1px solid #edf0f1;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 3px 12px rgba(25, 77, 40, 0.025);
+}
+
+.nd-panel-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.nd-panel-heading h3 {
+    margin: 0 0 5px;
+    color: #1b2920;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nd-panel-heading p {
+    margin: 0;
+    color: #829087;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.nd-period-button {
+    min-height: 32px;
+    gap: 6px;
+    padding: 0 9px;
+    font-size: 9px;
+}
+
+.nd-more-button {
+    display: grid;
+    place-items: center;
+    width: 33px;
+    height: 33px;
+    border: 1px solid #e5ebe6;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #617166;
+    cursor: pointer;
+}
+
+.nd-more-button:hover {
+    background: #eaf7ef;
+    color: #08764d;
+}
+
+
+/* Sales chart */
+
+.nd-chart-summary {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 14px;
+    color: #718076;
+    font-size: 10px;
+}
+
+.nd-chart-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #0fa36b;
+}
+
+.nd-chart-summary strong {
+    margin-left: 5px;
+    color: #1d3525;
+    font-size: 13px;
+}
+
+.nd-chart-growth {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    color: #0d9a62;
+    font-weight: 700;
+}
+
+.nd-sales-chart {
+    display: grid;
+    grid-template-columns: 38px minmax(0, 1fr);
+    width: 100%;
+    height: 220px;
+}
+
+.nd-chart-y-axis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 7px 23px 0;
+    color: #859188;
+    font-size: 8px;
+    text-align: right;
+}
+
+.nd-chart-plot {
+    position: relative;
+    min-width: 0;
+    height: 100%;
+    padding-bottom: 23px;
+}
+
+.nd-chart-grid {
+    position: absolute;
+    inset: 0 0 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nd-chart-grid span {
+    width: 100%;
+    border-top: 1px dashed #e8eee8;
+}
+
+.nd-chart-svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: calc(100% - 23px);
+    overflow: visible;
+}
+
+.nd-chart-months {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #7e8b80;
+    font-size: 9px;
+}
+
+
+/* ==========================================
+   REDESIGNED ORDER STATUS PANEL
+========================================== */
+
+.nd-order-status-panel {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 19px;
+}
+
+.nd-order-status-panel .nd-panel-heading {
+    margin-bottom: 15px;
+}
+
+
+/* Donut and completion summary */
+
+.nd-status-hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+    padding: 6px 0 18px;
+    border-bottom: 1px solid #edf1ed;
+}
+
+.nd-status-hero .nd-donut {
+    position: relative;
+    width: 108px;
+    height: 108px;
+    flex: 0 0 108px;
+    border-radius: 50%;
+    background: conic-gradient( #0fa36b 0% 63.9%, #3185d5 63.9% 80.3%, #f0a039 80.3% 93.4%, #e34f4f 93.4% 100%);
+    transform: rotate(-90deg);
+}
+
+.nd-status-hero .nd-donut::before {
+    content: "";
+    position: absolute;
+    inset: 21px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.nd-donut-center {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+}
+
+.nd-donut-center strong {
+    color: #1d3525;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.nd-donut-center span {
+    margin-top: 4px;
+    color: #7c897e;
+    font-size: 8px;
+    text-align: center;
+}
+
+.nd-status-summary {
+    min-width: 0;
+}
+
+.nd-summary-label {
+    color: #87948a;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.65px;
+    line-height: 1.5;
+}
+
+.nd-status-summary h2 {
+    margin: 7px 0;
+    color: #1c3023;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.6px;
+    overflow-wrap: anywhere;
+}
+
+.nd-status-summary h2 small {
+    color: #8a958d;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+.nd-status-summary p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+    color: #0e9c63;
+    font-size: 9px;
+    font-weight: 650;
+}
+
+.nd-status-summary p svg {
+    flex-shrink: 0;
+}
+
+
+/* Status progress bars */
+
+.nd-status-details {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding: 16px 0;
+}
+
+.nd-status-row {
+    width: 100%;
+    min-width: 0;
+}
+
+.nd-status-row-heading {
+    display: grid;
+    grid-template-columns: 8px minmax(0, 1fr) auto auto;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 7px;
+}
+
+.nd-status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.nd-status-dot.delivered {
+    background: #0fa36b;
+}
+
+.nd-status-dot.processing {
+    background: #3185d5;
+}
+
+.nd-status-dot.pending {
+    background: #f0a039;
+}
+
+.nd-status-dot.cancelled {
+    background: #e34f4f;
+}
+
+.nd-status-row-label {
+    color: #5f7064;
+    font-size: 9px;
+}
+
+.nd-status-row-heading strong {
+    color: #283d2e;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.nd-status-row-heading small {
+    min-width: 35px;
+    color: #8a968d;
+    font-size: 8px;
+    text-align: right;
+}
+
+.nd-status-track {
+    width: 100%;
+    height: 6px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #eef2ef;
+}
+
+.nd-status-fill {
+    display: block;
+    height: 100%;
+    min-width: 3px;
+    border-radius: inherit;
+}
+
+.nd-status-fill.delivered {
+    background: #0fa36b;
+}
+
+.nd-status-fill.processing {
+    background: #3185d5;
+}
+
+.nd-status-fill.pending {
+    background: #f0a039;
+}
+
+.nd-status-fill.cancelled {
+    background: #e34f4f;
+}
+
+
+/* Pending order summary */
+
+.nd-status-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: auto;
+    padding: 11px;
+    border: 1px solid #e5f0e7;
+    border-radius: 10px;
+    background: #f5faf6;
+}
+
+.nd-status-bottom>div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+}
+
+.nd-status-bottom-icon {
+    width: 32px;
+    height: 32px;
+    flex: 0 0 32px;
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+}
+
+.nd-status-bottom-icon.pending-icon {
+    background: #fff0d9;
+    color: #b7791f;
+}
+
+.nd-status-bottom>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.nd-status-bottom small {
+    color: #78877c;
+    font-size: 8px;
+    line-height: 1.5;
+}
+
+.nd-status-bottom strong {
+    color: #253d2d;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.nd-status-bottom button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    flex-shrink: 0;
+    padding: 7px 8px;
+    border: 0;
+    border-radius: 7px;
+    background: #0fa36b;
+    color: #ffffff;
+    font-size: 8px;
+    font-weight: 650;
+    cursor: pointer;
+}
+
+.nd-status-bottom button:hover {
+    background: #08764d;
+}
+
+
+/* ==========================================
+   RECENT ORDERS AND SHOP APPROVAL TABLES
+========================================== */
+
+.nd-table-panel {
+    padding: 0;
+    margin-bottom: 19px;
+    overflow: hidden;
+}
+
+.nd-table-heading {
+    padding: 19px 20px 0;
+}
+
+.nd-view-all {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 0;
+    border: 0;
+    background: transparent;
+    color: #0b9b64;
+    font-size: 10px;
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.nd-view-all:hover {
+    color: #08764d;
+}
+
+.nd-table-scroll {
+    width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.nd-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.nd-table thead {
+    background: #f8faf8;
+}
+
+.nd-table th {
+    padding: 12px 14px;
+    border-top: 1px solid #edf1ed;
+    border-bottom: 1px solid #e8eee8;
+    color: #7b887d;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.35px;
+}
+
+.nd-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #eff3ef;
+    color: #596b5e;
+    font-size: 10px;
+}
+
+.nd-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.nd-table tbody tr:hover {
+    background: #fbfdfb;
+}
+
+.nd-order-id {
+    color: #0b9b64 !important;
+    font-weight: 700;
+}
+
+.nd-amount {
+    color: #2c4031 !important;
+    font-weight: 700;
+}
+
+.nd-muted {
+    color: #849187 !important;
+}
+
+
+/* Product images */
+
+.nd-product-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 150px;
+}
+
+.nd-product-image {
+    display: block;
+    flex: 0 0 43px;
+    width: 43px;
+    height: 43px;
+    padding: 2px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid #e6eee7;
+    border-radius: 9px;
+    background: #f3f8f3;
+}
+
+.nd-product-details {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nd-product-details strong {
+    color: #344739;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.nd-product-details small {
+    color: #8b968e;
+    font-size: 9px;
+}
+
+
+/* Customer and store information */
+
+.nd-customer,
+.nd-shop {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.nd-customer-avatar,
+.nd-shop-avatar {
+    width: 31px;
+    height: 31px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #e4f3e7;
+    color: #176b3a;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.nd-customer strong,
+.nd-shop strong {
+    color: #344739;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.nd-shop-avatar.shop-orange {
+    background: #fff0e3;
+    color: #b96834;
+}
+
+.nd-shop-avatar.shop-yellow {
+    background: #fff5d7;
+    color: #92771c;
+}
+
+.nd-shop-avatar.shop-blue {
+    background: #e8f0ff;
+    color: #426db2;
+}
+
+
+/* Status badges */
+
+.nd-order-badge,
+.nd-shop-pending {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.nd-order-badge.delivered {
+    border: 1px solid #bde5cd;
+    background: #e8f7ef;
+    color: #12865b;
+}
+
+.nd-order-badge.processing {
+    border: 1px solid #c9dcf7;
+    background: #ecf4ff;
+    color: #276bbb;
+}
+
+.nd-order-badge.pending,
+.nd-shop-pending {
+    border: 1px solid #ead9bb;
+    background: #fff5e5;
+    color: #a86d1c;
+}
+
+.nd-order-badge.cancelled {
+    border: 1px solid #efcccc;
+    background: #fff0f0;
+    color: #bd4242;
+}
+
+.nd-review-button {
+    min-height: 29px;
+    padding: 0 11px;
+    border: 1px solid #bce4cd;
+    border-radius: 7px;
+    background: #e9f8ef;
+    color: #08764d;
+    font-size: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.nd-review-button:hover {
+    background: #d5f1e0;
+}
+
+.nd-demo-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px 17px;
+    border-top: 1px solid #edf1ed;
+    background: #fbfdfb;
+    color: #829086;
+    font-size: 9px;
+    line-height: 1.7;
+}
+
+.nd-demo-note svg {
+    flex-shrink: 0;
+    color: #0fa36b;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 1100px) {
+    .nd-stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .nd-analytics-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .nd-stat-body h3 {
+        font-size: 20px;
+    }
+    .nd-status-hero {
+        justify-content: flex-start;
+        gap: 24px;
+    }
+    .nd-status-details {
+        gap: 15px;
+    }
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 650px) {
+    .nd-welcome {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 13px;
+    }
+    .nd-welcome h2 {
+        font-size: 22px;
+    }
+    .nd-welcome p {
+        font-size: 10px;
+    }
+    .nd-date-button {
+        min-height: 35px;
+    }
+    .nd-stats-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 10px;
+    }
+    .nd-stat-card {
+        min-height: 95px;
+        padding: 14px;
+    }
+    .nd-stat-body h3 {
+        font-size: 21px;
+    }
+    .nd-analytics-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 13px;
+    }
+    .nd-panel {
+        padding: 14px;
+        border-radius: 12px;
+    }
+    .nd-panel-heading h3 {
+        font-size: 13px;
+    }
+    .nd-panel-heading p {
+        font-size: 9px;
+    }
+    .nd-sales-chart {
+        height: 185px;
+        grid-template-columns: 34px minmax(0, 1fr);
+    }
+    .nd-chart-y-axis {
+        padding-right: 5px;
+        font-size: 8px;
+    }
+    .nd-chart-months {
+        font-size: 8px;
+    }
+    /* Order Status stacks neatly on phones */
+    .nd-order-status-panel {
+        padding: 15px;
+    }
+    .nd-status-hero {
+        justify-content: flex-start;
+        gap: 18px;
+        padding: 5px 0 17px;
+    }
+    .nd-status-hero .nd-donut {
+        width: 105px;
+        height: 105px;
+        flex-basis: 105px;
+    }
+    .nd-status-hero .nd-donut::before {
+        inset: 20px;
+    }
+    .nd-status-hero .nd-donut-center strong {
+        font-size: 16px;
+    }
+    .nd-status-summary h2 {
+        font-size: 21px;
+    }
+    .nd-status-summary h2 small {
+        font-size: 9px;
+    }
+    .nd-status-details {
+        gap: 14px;
+        padding: 16px 0;
+    }
+    .nd-status-row-label {
+        font-size: 10px;
+    }
+    .nd-status-row-heading strong {
+        font-size: 10px;
+    }
+    .nd-status-bottom {
+        padding: 10px;
+    }
+    /* Scroll tables horizontally instead of crushing columns */
+    .nd-table-panel {
+        padding: 0;
+    }
+    .nd-table-heading {
+        align-items: flex-start;
+        padding: 15px 14px;
+    }
+    .nd-table {
+        min-width: 720px;
+    }
+    .nd-table th,
+    .nd-table td {
+        padding: 11px 12px;
+    }
+    .nd-product-cell {
+        min-width: 150px;
+        gap: 8px;
+    }
+    .nd-product-image {
+        width: 38px;
+        height: 38px;
+        flex-basis: 38px;
+    }
+    .nd-product-details strong {
+        font-size: 9px;
+    }
+    .nd-demo-note {
+        padding: 11px 13px;
+    }
+}
+
+
+/* Very small mobile screens */
+
+@media (max-width: 360px) {
+    .nd-stat-card {
+        gap: 9px;
+        padding: 12px 10px;
+    }
+    .nd-stat-icon {
+        width: 37px;
+        height: 37px;
+        flex-basis: 37px;
+    }
+    .nd-stat-body h3 {
+        font-size: 19px;
+    }
+    .nd-mini-chart {
+        right: 7px;
+        width: 30px;
+    }
+    .nd-panel {
+        padding: 11px;
+    }
+    .nd-table-panel {
+        padding: 0;
+    }
+    .nd-table-heading {
+        padding: 13px 11px;
+    }
+    .nd-status-hero {
+        gap: 12px;
+    }
+    .nd-status-hero .nd-donut {
+        width: 92px;
+        height: 92px;
+        flex-basis: 92px;
+    }
+    .nd-status-hero .nd-donut::before {
+        inset: 17px;
+    }
+    .nd-status-hero .nd-donut-center strong {
+        font-size: 14px;
+    }
+    .nd-status-summary h2 {
+        font-size: 19px;
+    }
+    .nd-status-bottom button {
+        padding: 7px;
+        font-size: 8px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .near-dashboard *,
+    .near-dashboard *::before,
+    .near-dashboard *::after {
+        scroll-behavior: auto;
+        transition: none !important;
+    }
+}
